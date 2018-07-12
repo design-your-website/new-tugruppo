@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/libs/jquery-3.3.1.js"></script>
+    <title>TuGruppo</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="css/imagenes/artistas/logo-light.png" alt="">
+            </div>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav class="navbar">
+                <div class="linea"></div>
+                <ul>
+                    <li>
+                        <a href="">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="">Artistas</a>
+                    </li>
+                    <li>
+                        <a href="">Patrocinadores</a>
+                    </li>
+                    <li>
+                        <a href="">Quienes Somos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-header">
+
+    </section>
+
+    <script type="text/javascript">
+        //Menu toogle-button
+
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav").removeClass("navbar");
+                $("nav").toggleClass("showing");
+            });
+
+             $(".linea").on("click", function () {
+                $("nav").removeClass("showing");
+                $("nav").addClass("navbar");
+            });
+        });
+    </script>
+</body>
+
+</html>
