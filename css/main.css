@@ -8,7 +8,13 @@
 \* ------------------------------------------------------------ */
 
 * {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
     box-sizing: border-box;
+
 }
 
 html,
@@ -20,6 +26,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+}
+
+.row{
+    position:relative;
+    margin:auto;
+    width:100%;
+    height: auto;
+    clear:both;
+    display:table;
 }
 
 [class*="col-"] {
@@ -280,7 +295,7 @@ Artistas
 }
 
 #galeria ul {
-    position: relative;
+    padding: 20px;
 }
 
 #galeria ul li {
