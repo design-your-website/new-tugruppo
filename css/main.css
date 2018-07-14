@@ -250,7 +250,10 @@ Artistas
     padding: 80px 0;
     height:1000px;
 }
-
+.item-name {
+    background: #261e32;
+    padding: 25px;
+}
 .inicio-artistas{
     color: #FFFFFF !important;
     text-align: center;
