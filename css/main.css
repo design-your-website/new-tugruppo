@@ -145,7 +145,7 @@ header ul li a:focus {
 \* ------------------------------------------------------------ */
 
 /* ------------------------------------------------------------ *\
-   -----  Abrir Menu
+   -----  Abrir Menu - Botones
 \* ------------------------------------------------------------ */
 
 .menu-icon {
@@ -159,7 +159,7 @@ header ul li a:focus {
 }
 
 /* ------------------------------------------------------------ *\
-   -----  Cerrar Menu
+   -----  Cerrar Menu - Botones
 \* ------------------------------------------------------------ */
 
 .linea {
@@ -224,7 +224,7 @@ section {
 }
 
 /* ------------------------------------------------------------ *\
-    Parrafo Seccion 1
+    Parrafo - Seccion 1
 \* ------------------------------------------------------------ */
 
 .p-center {
@@ -274,10 +274,11 @@ p {
 }
 
 .artistas .container {
-    width: 95%;
+    width: 100%;
 }
 
 .item-name {
+    /* Eliminar */
     background: #261e32;
     padding: 25px;
 }
@@ -329,9 +330,9 @@ p {
     height: 156px;
 }
 
-/*========================================
-Footer
-=============================================*/
+/* ------------------------------------------------------------ *\
+    Footer
+\* ------------------------------------------------------------ */
 
 .footer-distributed {
     background-color: #292c2f;
@@ -342,6 +343,7 @@ Footer
     font: normal 16px sans-serif;
     padding: 50px 50px 100px 50px;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .footer-distributed .footer-left p {
@@ -349,8 +351,6 @@ Footer
     font-size: 14px;
     margin: 0;
 }
-
-/* Footer links */
 
 .footer-distributed p.footer-links {
     font-size: 18px;
@@ -370,39 +370,28 @@ Footer
 .footer-distributed .footer-right {
     float: right;
     margin-top: 6px;
-    max-width: 180px;
+    max-width: 150px;
 }
 
 .footer-distributed .footer-right a {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 37px;
+    height: 62px;
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
     text-align: center;
-    line-height: 35px;
+    line-height: 62px;
     margin-left: 3px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 600px) {
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-right {
-        text-align: center;
-    }
-    .footer-distributed .footer-right {
-        float: none;
-        margin: 0 auto 20px;
-    }
-    .footer-distributed .footer-left p.footer-links {
-        line-height: 1.8;
-    }
-}
+/* ------------------------------------------------------------ *\
+-----   Redes - Footer
+\* ------------------------------------------------------------ */
 
 .socialw {
-    width: 235px;
+    width: 150px;
+    /*width: 235px;*/
     margin: 10px auto 10px -10px;
     overflow: auto;
     height: 100px;
@@ -418,69 +407,6 @@ Footer
     overflow: hidden;
 }
 
-.first {
-    margin-left: 0px;
-}
-
-/*    ANIMATIONS   */
-
-/* Fade In Down */
-
-@-webkit-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-100px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
-}
-
-@-moz-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -moz-transform: translateY(-100px);
-    }
-    100% {
-        opacity: 1;
-        -moz-transform: translateY(0);
-    }
-}
-
-@-o-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -o-transform: translateY(-100px);
-    }
-    100% {
-        opacity: 1;
-        -o-transform: translateY(0);
-    }
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fadeInDown {
-    -webkit-animation: fadeInDown 1s both 0.5s;
-    -moz-animation: fadeInDown 1s both 0.5s;
-    -o-animation: fadeInDown 1s both 0.5s;
-    animation: fadeInDown 1s both 0.5s;
-}
-
-/* Fade In Down */
-
-/* Social Transition */
-
 .social img {
     position: absolute;
     left: 0;
@@ -495,9 +421,24 @@ Footer
     margin-top: -62px;
 }
 
+.first {
+    margin-left: 0px;
+    /*  Eliminar  */
+}
+
 /* ------------------------------------------------------------ *\
 	Medias
 \* ------------------------------------------------------------ */
+
+.artistas .container {
+    width: 95%;
+}
+
+@media (max-width: 1280px) {
+    .artistas .container {
+        width: 100%;
+    }
+}
 
 @media (max-width: 960px) {
     header .container {
@@ -557,4 +498,77 @@ Footer
     .showing .linea {
         display: block
     }
+}
+
+@media (max-width: 600px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}
+
+/* ------------------------------------------------------------ *\
+    Animaciones
+\* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ *\
+-----   FadeInDown - Animaciones
+\* ------------------------------------------------------------ */
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@-o-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation: fadeInDown 1s both 0.5s;
+    -moz-animation: fadeInDown 1s both 0.5s;
+    -o-animation: fadeInDown 1s both 0.5s;
+    animation: fadeInDown 1s both 0.5s;
 }
