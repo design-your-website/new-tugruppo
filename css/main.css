@@ -3,7 +3,7 @@
 \* ------------------------------------------------------------ */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700');
-
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
 /* ------------------------------------------------------------ *\
 	Global
 \* ------------------------------------------------------------ */
@@ -23,8 +23,24 @@ body {
     background: #FFF;
     position: relative;
     font-size: 14px;
-    margin: 0;
-    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+p {
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
 }
 
 .row {
@@ -252,14 +268,6 @@ section {
     max-width: 590px;
     font-size: 15px;
     color: #FFFFFF !important;
-}
-
-p {
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    line-height: 22px;
-    font-size: 14px;
-    text-rendering: optimizeLegibility;
 }
 
 /* ------------------------------------------------------------ *\

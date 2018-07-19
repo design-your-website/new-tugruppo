@@ -110,10 +110,52 @@
 .about-artista {
     background: url(imagenes/fondos/Img-Musica6.jpg) no-repeat center center;
     background-size: cover;
-    height: 800px;
     padding: 80px 0;
 }
 
 .about-artista .container {
-    width: 85%;
+    width: 90%;
+}
+
+.about-artista h4 {
+    color: #FFF;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.about-box {
+    position: relative;
+    width: 33.33%;
+    float: left;
+    margin-right: 15px;
+}
+
+.about-inn {
+    background-color: #06162B;
+    padding: 50px 40px;
+}
+
+.about-inn h4 {
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.about-inn p {
+    color: #ABABAB;
+    margin: 0;
+    text-align: justify;
+}
+
+.video-box {
+    width: 63%;
+    float: left;
+    position: relative;
+    margin-left: 15px;
+}
+
+.video-box iframe {
+    width: 100%;
+    display: inline-block;
 }
