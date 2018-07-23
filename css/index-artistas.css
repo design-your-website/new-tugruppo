@@ -1,6 +1,18 @@
 /* ------------------------------------------------------------ *\
-    Seccion 1  
+    Secciones
 \* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ *\
+    Seccion Banner Artista
+\* ------------------------------------------------------------ */
+
+h4 {
+    color: #FFF;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 1.1;
+}
 
 .banner-artista {
     background: url(imagenes/fondos/Img-Musica5.jpg) no-repeat center center;
@@ -107,6 +119,10 @@
     transition: .4s ease;
 }
 
+/* ------------------------------------------------------------ *\
+    Seccion Acerca Artista
+\* ------------------------------------------------------------ */
+
 .about-artista {
     background: url(imagenes/fondos/Img-Musica6.jpg) no-repeat center center;
     background-size: cover;
@@ -114,7 +130,7 @@
 }
 
 .about-artista .container {
-    width: 90%;
+    width: 85%;
 }
 
 .about-artista h4 {
@@ -158,4 +174,84 @@
 .video-box iframe {
     width: 100%;
     display: inline-block;
+}
+
+/* ------------------------------------------------------------ *\
+    Seccion Videos Artista
+\* ------------------------------------------------------------ */
+
+.videos-artista {
+    background-color: #282A41;
+    padding: 80px 0 130px 0;
+}
+
+.videos-artista .container {
+    width: 85%;
+}
+
+.tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    border: none;
+    background-color: #1e1c2d;
+    width: 33.33%;
+    margin-right: 15px;
+}
+
+.tabs .tabs__item {
+    display: block;
+    background-color: inherit;
+    color: #939393;
+    border-left: 2px solid;
+    border-color: transparent;
+    padding: 22px;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+.tabs .tabs__item:hover {
+    background-color: #18141D;
+    border-left-color: #33CC99;
+    color: #FFF;
+}
+
+.tabs .tabs__item.active {
+    background-color: #18141D;
+    border-left-color: #33CC99;
+    color: #FFF;
+}
+
+.panels {
+    float: left;
+    position: relative;
+    padding: 0;
+    width: 64%;
+    margin-left: 15px;
+    height: 264px;
+}
+
+.panels .panels__item {
+    position: absolute;
+    left: -5000px;
+}
+
+.panels .panels__item.active {
+    position: relative;
+    left: 0;
+}
+
+.panels__item iframe {
+    width: 100%;
+    height: 300px;
 }
