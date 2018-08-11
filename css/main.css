@@ -41,6 +41,7 @@ p {
     line-height: 22px;
     font-size: 14px;
     text-rendering: optimizeLegibility;
+    color: white;
 }
 
 .row {
@@ -53,7 +54,8 @@ p {
 }
 
 [class*="col-"] {
-    float: left;
+    /* ------------------------------------------------------------ *\
+    float: left;*/
     padding: 0px;
 }
 
