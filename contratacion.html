@@ -7,12 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="footer, links, icons" />
     <!--<link href="css/materialize.min.css" rel="stylesheet">-->
-     <link href="js/libs/materializeultimaversion/materialize/css/materialize.css" rel="stylesheet">
+    <link href="js/libs/materializeultimaversion/materialize/css/materialize.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="icon" href="css/imagenes/artistas/cropped-Logo2-32x32.png">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/libs/jquery-3.3.1.js"></script>
-    
     <title>TuGruppo</title>
 </head>
 
@@ -56,19 +55,23 @@
                 <div class="container-contacto">
                     <div class="col-md-8">
                         <h3>Contratar</h3>
-                        <form id="contactForm" action="php/contact.php" method="post" class="positioned">
+                        <form id="contactForm" method="post" action="email.php" class="positioned">
                             <label>Nombre (requerido)</label>
                             <input type="text" name="senderName" id="senderName" required="">
                             <label>Email (requerido)</label>
-                            <input type="email" name="senderEmail" id="senderEmail" required="">
-                            <label>Telefono(requerido)</label>
-                            <input type="text" name="subject" id="subject">
+                            <input type="email" name="email" id="senderEmail" required="">
                             <label>Dirección(requerido)</label>
                             <input type="text" name="senderName" id="senderName" required="">
+                            <label>Telefono(requerido)</label>
+                            <input type="text" name="telefono" id="subject">                        
                             <label for="calendario">Ingrese la fecha de contratacion <span class="obligatorio">(requerido)</span></label>
                             <input name="calendario" type="text" class="datepicker" required>
+                            <label>Ingrese el tiempo de la presentacion <span class="obligatorio">(requerido)</span></label>
+                            <p class="range-field">
+                                <input type="range" id="test5" min="0" max="10" />
+                            </p>
                             <label>Mensaje</label>
-                            <textarea name="message" id="message"></textarea>
+                            <textarea name="mensaje" id="message"></textarea>
                             <button class="button large" type="submit">Enviar</button>
                         </form>
                     </div>
