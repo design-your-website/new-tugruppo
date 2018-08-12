@@ -381,7 +381,7 @@ section {
     left: 50%;
     position: absolute;
     width: 1000px;
-    top: 250px;
+    top: 150px;
     z-index: 10;
     transform: translate(-50%, -50%);
 }
