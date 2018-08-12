@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+
 /* ------------------------------------------------------------ *\
     Global
 \* ------------------------------------------------------------ */
@@ -65,6 +66,7 @@ h3 {
     letter-spacing: 0px;
 }
 
+
 /* ------------------------------------------------------------ *\
     Header
 \* ------------------------------------------------------------ */
@@ -91,6 +93,7 @@ header .container {
     padding: 0 15px;
 }
 
+
 /* ------------------------------------------------------------ *\
     Logo
 \* ------------------------------------------------------------ */
@@ -105,6 +108,7 @@ header .logo img {
     height: 47px;
     vertical-align: middle;
 }
+
 
 /* ------------------------------------------------------------ *\
     Navegacion
@@ -157,9 +161,11 @@ header ul li a:focus {
     transition: .4s ease-in-out;
 }
 
+
 /* ------------------------------------------------------------ *\
     Botones
 \* ------------------------------------------------------------ */
+
 
 /* ------------------------------------------------------------ *\
    -----  Abrir Menu - Botones
@@ -174,6 +180,7 @@ header ul li a:focus {
     display: none;
     padding: 10px;
 }
+
 
 /* ------------------------------------------------------------ *\
    -----  Cerrar Menu - Botones
@@ -217,6 +224,7 @@ header ul li a:focus {
     z-index: 101;
 }
 
+
 /* ------------------------------------------------------------ *\
     Secciones
 \* ------------------------------------------------------------ */
@@ -227,6 +235,7 @@ section {
     overflow: hidden;
     background: #FFF;
 }
+
 
 /* ------------------------------------------------------------ *\
    -----  Seccion 1  
@@ -240,15 +249,24 @@ section {
     opacity: 1;
     text-align: center;
 }
+
 .banner-header-somos {
-     background: url(imagenes/fondos/Img-Musica1.jpg) no-repeat 50% 50%;
+    background: url(imagenes/fondos/Img-Musica1.jpg) no-repeat 50% 50%;
     background-size: cover;
     min-height: 575px;
     z-index: 1;
     opacity: 1;
     text-align: center;
-   
 }
+.banner-header-contactanos{
+    background: url(imagenes/fondos/Img-Musica5.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    min-height: 975px;
+    z-index: 1;
+    opacity: 1;
+    
+}
+
 /* ------------------------------------------------------------ *\
     Parrafo - Seccion 1
 \* ------------------------------------------------------------ */
@@ -279,6 +297,7 @@ section {
     font-size: 15px;
     color: #FFFFFF !important;
 }
+
 
 /* ------------------------------------------------------------ *\
 -----   Seccion 2
@@ -348,6 +367,125 @@ section {
     height: 156px;
 }
 
+
+/* ------------------------------------------------------------ *\
+    Formulario de contacto
+\* ------------------------------------------------------------ */
+
+.container-contacto {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 300px;
+    padding-right: 15px;
+    width: 1170px;
+    left: 50%;
+    position: absolute;
+    width: 1000px;
+    top: 250px;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+#contact {
+  
+    padding: 100px 0;
+}
+/* ------------------------------------------------------------ *\
+    Parrafo 
+\* ------------------------------------------------------------ */
+
+.p-center-contacto {
+    left: 50%;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 10;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.p-center-contacto h3 {
+    color: #FFFFFF !important;
+}
+
+.p-center-contacto h3 {
+    font-size: 38px;
+}
+
+.p-center-contacto p {
+    
+    max-width: 590px;
+    font-size: 15px;
+    color: #FFFFFF !important;
+}
+#contact h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 30px;
+}
+
+#contact p {
+    color: #888;
+    margin-bottom: 30px;
+}
+#contact form label {
+    color: #888;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+#contact form input {
+    border: none;
+    background: #fff;
+    border-radius: 3px;
+    height: 40px;
+    padding: 0 15px;
+    color: #000;
+    width: 50%;
+    display: block;
+    margin-bottom: 15px;
+}
+#contact form textarea {
+    width: 500px;
+    border: none;
+    background: #fff;
+    border-radius: 3px;
+    height: 200px;
+    padding: 15px;
+    color: #000;
+    display: block;
+    margin-bottom: 15px;
+}
+#contact form button {
+    border: medium none;
+    font-size: 14px;
+    background: #FF00A4;
+}
+.button.large {
+    padding: 12px 25px;
+}
+
+.button, input.button {
+    transition: background-color .3s linear,color .3s linear;
+    position: relative;
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 1.34em;
+    padding: .667em 2em;
+    border-bottom: none;
+    -webkit-border-radius: .333em;
+    -moz-border-radius: .333em;
+    border-radius: .333em;
+    background-color: #FF00A4;
+    color: #FFF !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-size: .778em;
+    font-family: 'Montserrat',sans-serif !important;
+    line-height: 1.714em !important;
+    cursor: pointer;
+}
 /* ------------------------------------------------------------ *\
     Footer
 \* ------------------------------------------------------------ */
@@ -403,6 +541,7 @@ section {
     margin-left: 3px;
 }
 
+
 /* ------------------------------------------------------------ *\
 -----   Redes - Footer
 \* ------------------------------------------------------------ */
@@ -443,6 +582,7 @@ section {
     margin-left: 0px;
     /*  Eliminar  */
 }
+
 
 /* ------------------------------------------------------------ *\
     Medias
@@ -505,7 +645,7 @@ section {
         margin: 0;
         transition: .4s ease-in-out;
     }
-  
+
     .showing .linea {
         display: block
     }
@@ -525,9 +665,11 @@ section {
     }
 }
 
+
 /* ------------------------------------------------------------ *\
     Animaciones
 \* ------------------------------------------------------------ */
+
 
 /* ------------------------------------------------------------ *\
 -----   FadeInDown - Animaciones
