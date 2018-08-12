@@ -244,9 +244,9 @@ section {
 .banner-header {
     background: url(imagenes/artistas/posterfinal.jpg) no-repeat 50% 50%;
     background-size: cover;
-    min-height: 575px;
+    min-height: 375px;
     z-index: 1;
-    opacity: 1;
+    filter: grayscale(70%);
     text-align: center;
 }
 
