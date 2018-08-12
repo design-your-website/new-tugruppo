@@ -4422,7 +4422,6 @@ table span.badge {
 
 nav {
     color: #fff;
-    background: -webkit-linear-gradient(top, #1C0D6D 0, #000000 100%) no-repeat;
     width: 100%;
     height: 56px;
     line-height: 56px;
@@ -6311,7 +6310,7 @@ button:focus {
 }
 
 label {
-    font-size: 0.8rem;
+    font-size: medium;
     color: #9e9e9e;
 }
 
