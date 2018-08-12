@@ -240,7 +240,15 @@ section {
     opacity: 1;
     text-align: center;
 }
-
+.banner-header-somos {
+     background: url(imagenes/fondos/Img-Musica1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    min-height: 575px;
+    z-index: 1;
+    opacity: 1;
+    text-align: center;
+   
+}
 /* ------------------------------------------------------------ *\
     Parrafo - Seccion 1
 \* ------------------------------------------------------------ */
