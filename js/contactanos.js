@@ -1,23 +1,23 @@
-var messageDelay = 2000;  // How long to display status messages (in milliseconds)
+var messageDelay = 2000;  // Cuanto tiempo mostrara el mensajes de estado (emilisegundos)
 
-// Init the form once the document is ready
+// inicia el formulario una vez que el documento esté listo
 $( init );
 
 
-// Initialize the form
+// Inicializa el formulario
 
 function init() {
 
-  // Hide the form initially.
-  // Make submitForm() the form's submit handler.
-  // Position the form so it sits in the centre of the browser window.
+  // ocultar el formulario inicialmente.
+  // Coloca el formulario de modo que se encuentre en el centro de la ventana del navegador.
   $('#contactForm').show().submit( submitForm ).addClass( 'positioned' );
 
-  // When the "Send us an email" link is clicked:
-  // 1. Fade the content out
-  // 2. Display the form
-  // 3. Move focus to the first field
-  // 4. Prevent the link being followed
+
+// Cuando se hace clic en el boton "Enviar":
+  // 1. Oculta el contenido
+  // 2. Mostrar el formulario
+  // 3. Mueve el foco al primer campo
+  // 4. Evita que se siga el enlace
 
   $('a[href="#contactForm"]').click( function() {
     $('#contactForm').fadeTo( 'slow', .2 );
@@ -31,22 +31,22 @@ function init() {
 }
 
 
-// Submit the form via Ajax
+// Se Envía el formulario a través de Ajax
 
 function submitForm() {
   var contactForm = $(this);
 
-  // Are all the fields filled in?
+  // ¿Están todos los campos rellenos?
 
   if ( !$('#senderName').val() || !$('#senderEmail').val() || !$('#message').val() ) {
 
-    // No; display a warning message and return to the form
+    // No; mostrar un mensaje de advertencia y regresar al formulario
     $('#incompleteMessage').fadeIn().delay(messageDelay).fadeOut();
     contactForm.fadeOut().delay(messageDelay).fadeIn();
 
   } else {
 
-    // Yes; submit the form to the PHP script via Ajax
+    // Sí; enviar el formulario al script PHP a través de Ajax
 
     $('#sendingMessage').fadeIn();
     contactForm.fadeOut();
@@ -59,12 +59,12 @@ function submitForm() {
     } );
   }
 
-  // Prevent the default form submission occurring
+  // Evite que se produzca el envío de formularios predeterminado
   return false;
 }
 
 
-// Handle the Ajax response
+// Maneja la respuesta de Ajax
 
 function submitFinished( response ) {
   response = $.trim( response );
@@ -72,10 +72,11 @@ function submitFinished( response ) {
 
   if ( response == "success" ) {
 
-    // Form submitted successfully:
-    // 1. Display the success message
-    // 2. Clear the form fields
-    // 3. Fade the content back in
+
+// Formulario enviado con éxito:
+    // 1. Mostrar el mensaje de éxito
+    // 2. Borre los campos del formulario
+    // 3. Ocultar el contenido de nuevo 
 
     $('#successMessage').fadeIn().delay(messageDelay).fadeOut();
     $('#senderName').val( "" );
@@ -86,8 +87,9 @@ function submitFinished( response ) {
 
   } else {
 
-    // Form submission failed: Display the failure message,
-    // then redisplay the form
+
+// Falló el envío del formulario: muestra el mensaje de error,
+    // luego volver a mostrar el formulario
     $('#successMessage').fadeIn().delay(messageDelay).fadeOut();
     $('#contactForm').delay(messageDelay+500).fadeIn();
   }
