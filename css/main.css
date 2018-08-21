@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
-
 /* ------------------------------------------------------------ *\
     Global
 \* ------------------------------------------------------------ */
@@ -24,6 +23,8 @@ body {
     background: #FFF;
     position: relative;
     font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -55,8 +56,7 @@ p {
 }
 
 [class*="col-"] {
-    /* ------------------------------------------------------------ *\
-    float: left;*/
+    float: left;
     padding: 0px;
 }
 
@@ -65,7 +65,6 @@ h3 {
     font-weight: 700;
     letter-spacing: 0px;
 }
-
 
 /* ------------------------------------------------------------ *\
     Header
@@ -91,8 +90,8 @@ header .container {
     width: 85%;
     height: 47px;
     padding: 0 15px;
+    margin: 0 auto;
 }
-
 
 /* ------------------------------------------------------------ *\
     Logo
@@ -108,7 +107,6 @@ header .logo img {
     height: 47px;
     vertical-align: middle;
 }
-
 
 /* ------------------------------------------------------------ *\
     Navegacion
@@ -161,11 +159,9 @@ header ul li a:focus {
     transition: .4s ease-in-out;
 }
 
-
 /* ------------------------------------------------------------ *\
     Botones
 \* ------------------------------------------------------------ */
-
 
 /* ------------------------------------------------------------ *\
    -----  Abrir Menu - Botones
@@ -180,7 +176,6 @@ header ul li a:focus {
     display: none;
     padding: 10px;
 }
-
 
 /* ------------------------------------------------------------ *\
    -----  Cerrar Menu - Botones
@@ -224,7 +219,6 @@ header ul li a:focus {
     z-index: 101;
 }
 
-
 /* ------------------------------------------------------------ *\
     Secciones
 \* ------------------------------------------------------------ */
@@ -236,7 +230,6 @@ section {
     background: #FFF;
 }
 
-
 /* ------------------------------------------------------------ *\
    -----  Seccion 1  
 \* ------------------------------------------------------------ */
@@ -244,7 +237,8 @@ section {
 .banner-header {
     background: url(imagenes/fondos/latest-relase.jpg) no-repeat 50% 50%;
     background-size: cover;
-    min-height: 375px;
+    /*min-height: 375px;*/
+    height: 450px;
     z-index: 1;
     text-align: center;
 }
@@ -257,13 +251,22 @@ section {
     opacity: 1;
     text-align: center;
 }
-.banner-header-contactanos{
+
+.banner-header-contactanos {
     background: url(imagenes/fondos/Img-Musica5.jpg) no-repeat 50% 50%;
     background-size: cover;
     min-height: 975px;
     z-index: 1;
     opacity: 1;
-    
+}
+
+.banner-header-artistas {
+    background: url(imagenes/artistas/header-artistas.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 450px;
+    z-index: 1;
+    opacity: 1;
+    text-align: center;
 }
 
 /* ------------------------------------------------------------ *\
@@ -297,12 +300,12 @@ section {
     color: #FFFFFF !important;
 }
 
-
 /* ------------------------------------------------------------ *\
 -----   Seccion 2
 \* ------------------------------------------------------------ */
 
 .artistas {
+    background-color: #19151d;
     background: url(imagenes/artistas/medio.jpg) no-repeat 50% 50%;
     background-size: cover;
     padding: 80px 0;
@@ -366,7 +369,6 @@ section {
     height: 156px;
 }
 
-
 /* ------------------------------------------------------------ *\
     Formulario de contacto
 \* ------------------------------------------------------------ */
@@ -386,10 +388,12 @@ section {
 }
 
 #contact {
-  
     padding: 100px 0;
 }
-.statusMessage, .successmessage, .errormessage {
+
+.statusMessage,
+.successmessage,
+.errormessage {
     display: none;
     width: 100%;
     background: #222;
@@ -397,6 +401,7 @@ section {
     padding: 20px;
     border-radius: 3px;
 }
+
 /* ------------------------------------------------------------ *\
     Parrafo 
 \* ------------------------------------------------------------ */
@@ -422,11 +427,11 @@ section {
 }
 
 .p-center-contacto p {
-    
     max-width: 590px;
     font-size: 15px;
     color: #FFFFFF !important;
 }
+
 #contact h3 {
     color: #fff;
     margin: 0;
@@ -437,11 +442,13 @@ section {
     color: #888;
     margin-bottom: 30px;
 }
+
 #contact form label {
     color: #888;
     font-weight: 400;
     margin-bottom: 5px;
 }
+
 #contact form input {
     border: none;
     background: #fff;
@@ -453,6 +460,7 @@ section {
     display: block;
     margin-bottom: 15px;
 }
+
 #contact form textarea {
     width: 500px;
     border: none;
@@ -464,17 +472,19 @@ section {
     display: block;
     margin-bottom: 15px;
 }
+
 #contact form button {
     border: medium none;
     font-size: 14px;
-    
 }
+
 .button.large {
     padding: 12px 25px;
 }
 
-.button, input.button {
-    transition: background-color .3s linear,color .3s linear;
+.button,
+input.button {
+    transition: background-color .3s linear, color .3s linear;
     position: relative;
     display: inline-block;
     margin-right: 1em;
@@ -489,10 +499,11 @@ section {
     text-decoration: none !important;
     text-transform: uppercase;
     font-size: .778em;
-    font-family: 'Montserrat',sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
     line-height: 1.714em !important;
     cursor: pointer;
 }
+
 /* ------------------------------------------------------------ *\
     Footer
 \* ------------------------------------------------------------ */
@@ -514,6 +525,8 @@ section {
     font-size: 14px;
     margin: 0;
 }
+
+/* Footer links */
 
 .footer-distributed p.footer-links {
     font-size: 18px;
@@ -547,7 +560,6 @@ section {
     line-height: 62px;
     margin-left: 3px;
 }
-
 
 /* ------------------------------------------------------------ *\
 -----   Redes - Footer
@@ -590,14 +602,9 @@ section {
     /*  Eliminar  */
 }
 
-
 /* ------------------------------------------------------------ *\
     Medias
 \* ------------------------------------------------------------ */
-
-.artistas .container {
-    width: 95%;
-}
 
 @media (max-width: 1280px) {
     .artistas .container {
@@ -607,6 +614,9 @@ section {
 
 @media (max-width: 960px) {
     header .container {
+        width: 95%;
+    }
+    .artistas .container {
         width: 95%;
     }
 }
@@ -652,7 +662,14 @@ section {
         margin: 0;
         transition: .4s ease-in-out;
     }
-
+    header nav ul li {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+        text-align: center;
+    }
     .showing .linea {
         display: block
     }
@@ -672,11 +689,9 @@ section {
     }
 }
 
-
 /* ------------------------------------------------------------ *\
     Animaciones
 \* ------------------------------------------------------------ */
-
 
 /* ------------------------------------------------------------ *\
 -----   FadeInDown - Animaciones
